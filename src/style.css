@@ -14,7 +14,7 @@ body {
     margin-bottom: 0;
     width: 600px;
     border-radius: 15px;
-    margin-top: 150px;
+    margin-top: 100px;
     font-family: 'Courier New', Courier, monospace;
     color: #52796F;
     background: rgb(202, 210, 197, 0.8);
@@ -50,6 +50,15 @@ button {
     padding: 8px;
     margin: 0 auto;
     margin-top: 15px;
+    border: 2px solid rgb(53, 79, 82, 0.7);
+    background-color: rgb(255, 255, 255, 0.3);
+    color: #52796F;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+button :any-link {
+    text-decoration: none;
+    color: #2F3E46;
 }
 .clock-icon {
     width: 50px;
@@ -85,7 +94,7 @@ button {
 }
 
 .date {
-    color:#52796f;
+    color:#354F52;
   }
 
 .time {
@@ -93,7 +102,7 @@ button {
     color: #2F3E46;
     display: flex;
     float: right;
-    font-weight: lighter;
+    font-weight: 200;
     font-family: "poppins", sans-serif;
     letter-spacing: 10px;
     align-self: center;
