@@ -46,16 +46,19 @@ function updateCity(event) {
     let cityName = cityTimezone.replace("_", " ").split("/")[1];
     let cityDate = moment.tz(cityTimezone).format("MMMM Do, YYYY")
     let cityTime = moment.tz(cityTimezone);
+    let countryName = cityTimezone.replace("_", " ").split("/")[0];
+    console.log(cityTime);
     let defaultCities = document.querySelector("#defaultCities");
     defaultCities.innerHTML = `
     <div class="city">
         <div>
+            <div class="country">${countryName}</div>
             <h2>${cityName}</h2>
             <div class="date">${cityDate}</div>
         </div>
         <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small></div>
   </div>
-  `;
+  <a href="/">All cities</a>  `;
 }
 
 let citiesSelectElement = document.querySelector("#dropdownMenu");
