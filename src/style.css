@@ -107,7 +107,6 @@ button :any-link {
     letter-spacing: 10px;
     align-self: center;
     padding-top: 15px;
-    
 }
 
 .time small {
@@ -137,7 +136,12 @@ button :any-link {
     padding-left: 8px;
     border-radius: 5px;
     color: #354F52;
-    
+}
+.panel {
+    background-color: rgb(202, 210, 197, 0.5);
+    color: rgb(202, 210, 197, 0);
+    padding-left: 8px;
+    border-radius: 5px;
 }
 
 select {
